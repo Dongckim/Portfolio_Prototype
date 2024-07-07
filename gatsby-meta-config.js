@@ -11,9 +11,9 @@ module.exports = {
   },
   ga: '0', // Google Analytics Tracking ID
   author: {
-    name: `김동찬`,
+    name: '김동찬',
     bio: {
-      role: `개발자`,
+      role: '개발자',
       description: ['문제를 해결하는', '세상을 혁신하는', '대체불가능한'],
       thumbnail: 'sample.png', // Path to the image in the 'asset' folder
     },
