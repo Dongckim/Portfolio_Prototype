@@ -11,9 +11,9 @@ module.exports = {
   },
   ga: '0', // Google Analytics Tracking ID
   author: {
-    name: '김동찬',
+    name: ['김동찬', '알렉스', 'ALEX'],
     bio: {
-      role: '개발자',
+      role: '엔지니어',
       description: ['문제를 해결하는', '세상을 혁신하는', '대체불가능한'],
       thumbnail: 'sample.png', // Path to the image in the 'asset' folder
     },
@@ -42,13 +42,26 @@ module.exports = {
       },
       // ========================================================
       // ========================================================
+      // {
+      //   date: '2021.02 ~',
+      //   activity: '개인 블로그 개발 및 운영',
+      //   links: {
+      //     post: '/gatsby-starter-zoomkoding-introduction',
+      //     github: 'https://github.com/zoomkoding/zoomkoding-gatsby-blog',
+      //     demo: 'https://www.zoomkoding.com',
+      //   },
+      // },
+      // =====       [Timestamp Sample and Structure]      =====
+      // ===== 🚫 Don't erase this sample (여기 지우지 마세요!) =====
       {
-        date: '2021.02 ~',
-        activity: '개인 블로그 개발 및 운영',
+        date: '2024.08 ~',
+        activity: 'The State Universiyt of New York, Stony Brook University, 기술경영학과 컴퓨터과학 전공',
         links: {
-          post: '/gatsby-starter-zoomkoding-introduction',
-          github: 'https://github.com/zoomkoding/zoomkoding-gatsby-blog',
-          demo: 'https://www.zoomkoding.com',
+          github: '',
+          post: '',
+          googlePlay: '',
+          appStore: '',
+          demo: '',
         },
       },
     ],
