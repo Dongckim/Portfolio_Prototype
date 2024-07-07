@@ -54,8 +54,26 @@ module.exports = {
       // =====       [Timestamp Sample and Structure]      =====
       // ===== 🚫 Don't erase this sample (여기 지우지 마세요!) =====
       {
+        date: '2019.03 ~ 2024.06',
+        activity: 'Ghent University Global Campus, 분자생명공학과',
+        // links: {
+        //   post: '/gatsby-starter-zoomkoding-introduction',
+        //   github: 'https://github.com/zoomkoding/zoomkoding-gatsby-blog',
+        //   demo: 'https://www.zoomkoding.com',
+        // },
+      },
+      {
+        date: '2021.09 ~ 2023.03',
+        activity: '대한민국 육군 의무병 만기전역',
+        // links: {
+        //   post: '/gatsby-starter-zoomkoding-introduction',
+        //   github: 'https://github.com/zoomkoding/zoomkoding-gatsby-blog',
+        //   demo: 'https://www.zoomkoding.com',
+        // },
+      },
+      {
         date: '2024.08 ~',
-        activity: 'The State Universiyt of New York, Stony Brook University, 기술경영학과 컴퓨터과학 전공',
+        activity: 'The State University of New York, Stony Brook University 기술경영학과 컴퓨터과학 전공',
         links: {
           github: '',
           post: '',
