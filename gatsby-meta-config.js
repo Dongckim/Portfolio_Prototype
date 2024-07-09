@@ -140,16 +140,53 @@ module.exports = {
       },
       // ========================================================
       // ========================================================
+      // {
+      //   title: '개발 블로그 테마 개발',
+      //   description:
+      //     '개발 블로그를 운영하는 기간이 조금씩 늘어나고 점점 많은 생각과 경험이 블로그에 쌓아가면서 제 이야기를 담고 있는 블로그를 직접 만들어보고 싶게 되었습니다. 그동안 여러 개발 블로그를 보면서 좋았던 부분과 불편했던 부분들을 바탕으로 레퍼런스를 참고하여 직접 블로그 테마를 만들게 되었습니다.',
+      //   techStack: ['gatsby', 'react'],
+      //   thumbnailUrl: 'blog.png',
+      //   links: {
+      //     post: '/gatsby-starter-zoomkoding-introduction',
+      //     github: 'https://github.com/zoomkoding/zoomkoding-gatsby-blog',
+      //     demo: 'https://www.zoomkoding.com',
+      //   },
+      // },
+      
       {
-        title: '개발 블로그 테마 개발',
+        title: 'ACE (AWOONG Celeb) 서류전형 검토 솔루션',
         description:
-          '개발 블로그를 운영하는 기간이 조금씩 늘어나고 점점 많은 생각과 경험이 블로그에 쌓아가면서 제 이야기를 담고 있는 블로그를 직접 만들어보고 싶게 되었습니다. 그동안 여러 개발 블로그를 보면서 좋았던 부분과 불편했던 부분들을 바탕으로 레퍼런스를 참고하여 직접 블로그 테마를 만들게 되었습니다.',
-        techStack: ['gatsby', 'react'],
-        thumbnailUrl: 'blog.png',
+          '특정 직업군에 따른 지원자의 능력과 외모를 투명하게 분석하는 기준을 제공해, 면접 과정을 간소화하며 효율적인 채용을 도우며, 지원자들의 경력과 능력등을 세부 카테고리로 분류하여 다수 지원자들을 기업이 한눈에 비교 분석할 수 있고, 또한, 창의성과 노력성을 중시하는 기업의 입장에서 사원 선발시 생성형 AI 사용 비중을 검증하는 솔루션입니다.',
+        techStack: ['DetectGPT', '#project about face', '창업'],
+        thumbnailUrl: 'ACE-document.png',
         links: {
-          post: '/gatsby-starter-zoomkoding-introduction',
-          github: 'https://github.com/zoomkoding/zoomkoding-gatsby-blog',
-          demo: 'https://www.zoomkoding.com',
+          post: '',
+          github: '',
+          demo: 'https://docs.google.com/document/d/1ZbwFQUe7OzkLkLlP38_OCTNLl_N_s-sUfCGgS_TD1wU/edit?usp=sharing',
+        },
+      },
+      {
+        title: 'KWDC 2023',
+        description:
+        '코엑스 그랜드볼룸에서 열린 한국 최대 iOS와 애플생태계 개발자 컨퍼런스 오거나이징 스태프로 참여하여, 성공적으로 이벤트를 마쳤습니다. 다양한 개발자들과 네트워킹을 하며 교류하였고, 1000명 이상이 참석하는 행사로서 안전하게 진행하였습니다.',
+        techStack: ['Apple', 'Networking', 'iOS'],
+        thumbnailUrl: 'blog-5.png',
+        links: {
+          post: 'https://brunch.co.kr/@kakaobankplus/76',
+          github: '',
+          demo: 'https://kwdc2023.github.io/',
+        },
+      },
+      {
+        title: '함께 사용하는 내 물품 대여서비스, 빌리지',
+        description:
+          'Village는 지역 및 위치서비스 기반 주변에서 원하는 제품들을 보다 합리적으로 간편하게 대여할 수 있도록 도와주는 서비스입니다. 언제든지 부담없이 잠깐 쓸 제품이지만 비싼 가격 주고 사기는 힘들때, 살 계획은 없지만 체험해보고 싶은 제품이 있을때, 집 근처 또는 내가 원하는 지역에서 원하는 기간동안 대여서비스를 이용할 수 있습니다.',
+        techStack: ['REACT', 'STOMP', 'axios', 'https', 'AWS Cloudfront'],
+        thumbnailUrl: 'blog-1.png',
+        links: {
+          post: '',
+          github: 'https://github.com/Dongckim/Village_FE',
+          demo: 'https://village99.store/',
         },
       },
     ],
