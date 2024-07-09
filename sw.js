@@ -36,11 +36,11 @@ self.__precacheManifest = [
     "url": "framework-de157c6b30d4790e4e81.js"
   },
   {
-    "url": "app-cc9df1175a7ca91d60c8.js"
+    "url": "app-b159fc2af242fcd9e69d.js"
   },
   {
     "url": "offline-plugin-app-shell-fallback/index.html",
-    "revision": "2177cec37701e110d767bcac4e0ea0f0"
+    "revision": "6824279c8f2db076271c0364d4bbc464"
   },
   {
     "url": "static/webfonts/s/roboto/v30/KFOlCnqEu92Fr1MmSU5fBBc4.woff2"
@@ -56,7 +56,7 @@ self.__precacheManifest = [
   },
   {
     "url": "manifest.webmanifest",
-    "revision": "2e8d5d5b380a53941c03ca78866748ee"
+    "revision": "6b18c68907ca2cfc86a29ba632b3a382"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
@@ -166,7 +166,7 @@ const navigationRoute = new NavigationRoute(async ({ event }) => {
   // Check for resources + the app bundle
   // The latter may not exist if the SW is updating to a new version
   const resources = await idbKeyval.get(`resources:${pathname}`)
-  if (!resources || !(await caches.match(`/app-cc9df1175a7ca91d60c8.js`))) {
+  if (!resources || !(await caches.match(`/app-b159fc2af242fcd9e69d.js`))) {
     return await fetch(event.request)
   }
 
