@@ -1,9 +1,9 @@
 module.exports = {
   title: `dong-chan.com`,
-  description: `Dong`,
+  description: `알렉스의 끄적 끄적 끄적`,
   language: `ko`, // `ko`, `en` => currently support versions for Korean and English
   siteUrl: `https://dongckim.github.io/`,
-  ogImage: `/og-image.png`, // Path to your in the 'static' folder
+  ogImage: `/og-image.jpg`, // Path to your in the 'static' folder
   comments: {
     utterances: {
       repo: `dongckim/dongckim.github.io`, // `zoomkoding/zoomkoding-gatsby-blog`,
@@ -14,13 +14,13 @@ module.exports = {
     name: ['김동찬', '알렉스', 'ALEX'],
     bio: {
       role: '엔지니어',
-      description: ['문제를 해결하는', '세상을 혁신하는', '대체불가능한'],
+      description: ['문제를 해결하는', '세상을 혁신하는', '대체 불가능한'],
       thumbnail: 'sample.png', // Path to the image in the 'asset' folder
-    },
+    }, 
     social: {
-      github: ``, // `https://github.com/Dongckim`,
-      linkedIn: ``, // `https://www.linkedin.com/in/dongckim99/`,
-      email: ``, // `dongchankim1999@gmail.com`,
+      github: `https://github.com/Dongckim`, // `https://github.com/Dongckim`,
+      linkedIn: `https://www.linkedin.com/in/dongckim99/`, // `https://www.linkedin.com/in/dongckim99/`,
+      email: `dongchankim1999@gmail.com`, // `dongchankim1999@gmail.com`,
     },
   },
 
@@ -63,6 +63,15 @@ module.exports = {
         // },
       },
       {
+        date: '2019.03 ~ 2020.06',
+        activity: 'Student Council, Junior Year Representative 신입생 대표',
+        // links: {
+        //   post: '/gatsby-starter-zoomkoding-introduction',
+        //   github: 'https://github.com/zoomkoding/zoomkoding-gatsby-blog',
+        //   demo: 'https://www.zoomkoding.com',
+        // },
+      },
+      {
         date: '2021.09 ~ 2023.03',
         activity: '대한민국 육군 의무병 만기전역',
         // links: {
@@ -72,8 +81,37 @@ module.exports = {
         // },
       },
       {
-        date: '2024.08 ~',
+        date: '2023.06 ~ 2023.08',
+        activity: '서울대학교 OUTTA AI 인공지능 딥러닝 부트캠프 2관왕 수상 (참가자 우수상, 팀 우수상)',
+        // links: {
+        //   post: '/gatsby-starter-zoomkoding-introduction',
+        //   github: 'https://github.com/zoomkoding/zoomkoding-gatsby-blog',
+        //   demo: 'https://www.zoomkoding.com',
+        // },
+      },
+      {
+        date: '2023.11 ~ 2023.12',
+        activity: 'IGC 스타트업 아이디어 공모전 최우수상 수상',
+        // links: {
+        //   post: '/gatsby-starter-zoomkoding-introduction',
+        //   github: 'https://github.com/zoomkoding/zoomkoding-gatsby-blog',
+        //   demo: 'https://www.zoomkoding.com',
+        // },
+      },
+      {
+        date: '2024.08 ~ current',
         activity: 'The State University of New York, Stony Brook University 기술경영학과 컴퓨터과학 전공',
+        links: {
+          github: '',
+          post: '',
+          googlePlay: '',
+          appStore: '',
+          demo: '',
+        },
+      },
+      {
+        date: '2024.04 ~ current',
+        activity: '2024 AI교육도시 학생 학술연구 대학생 멘토 인천진산과학고등학교 담당',
         links: {
           github: '',
           post: '',
