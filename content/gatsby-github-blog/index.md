@@ -1,132 +1,135 @@
 ---
-emoji: 🔮
-title: Gatsby 테마로 GitHub Blog 만들기
-date: '2024-07-07 00:17:00'
+emoji: 🍎
+title: inout 입출력 파라미터, gaurd문, 옵셔널 바인딩
+date: '2024-07-10 00:17:00'
 author: Alex
 tags: 블로그 github-pages gatsby
-categories: LIFE일상 VR/AR 회고
+categories: iOS TIL 
 ---
 
-제 블로그의 테마나 Gatsby의 다른 테마를 활용해서 Github Blog를 만들고 싶은 분들이 계실텐데요! 이런 분들에게 도움을 드리고자 이 글을 쓰게 되었습니다. 잘 안되는 부분이나 궁금한 점을 댓글로 남겨주면 확인해보고 답변 드리도록 하겠습니다!
+기존 파이썬이나 자바스크립트 문법을 알고 있기 때문에, 비슷한 방식의 문법구조와 관련된 건 스킵하기로 했다. 다만 Swift에서 꼭 알아야만 하는 문법과 이 언어의 특징과 같은 문법들은 꼼꼼하게 되짚어보자.</br><i>(사실 이게 더 어려움;;)<i>
 
-## 1. Repository 생성하기
+## 1. inout 입출력 파라미터
 
-GitHub Blog를 만들려면 Github에 Repository를 생성해야 합니다.
+함수를 통해, 변수를 직접 수정하고 싶은 경우, 함수내의 파라미터는 기본적으로 복사되어 전달되는 값타입(str, string, Int...)이며, 임시상수이기 때문에 변경 불가가 원칙임. 
 
-![github-blog.png](github-blog.png)
+```swift
+var num1 = 123
+var num2 = 456
 
-GitHub에 로그인 한 뒤에 우측 상단에 있는 New Repository 버튼을 클릭하면 repository 생성 페이지로 이동하게 됩니다. 이 때 Import a repository 버튼을 클릭합니다.
+func swap(a: Int, b: Int){
+  var c = a   //123
 
-![github-blog-1.png](github-blog-1.png)
-
-아래 페이지에 도달하시면 두 가지 정보를 넣어주셔야 하는데, Your old repository's clone URL에는 사용하고자 하는 gatsby 테마가 있는 repository의 주소를 넣어주시면 됩니다.
-
-제 블로그 테마를 쓰고 싶으신 분들은 여기에 [https://github.com/zoomKoding/zoomkoding.com](https://github.com/zoomKoding/zoomkoding.com)를 넣어주세요!
-
-![github-blog-2.png](github-blog-2.png)
-
-그럼 이제 Repository Name을 입력해줍니다. 이 때 주의할 점은 Repository명은 꼭 [GitHubID].github.io로 설정하셔야 합니다.
-
-그리고 Begin Import 버튼을 클릭하고 조금 기다리면 선택하신 블로그 테마를 import한 Repository가 생성되게 됩니다.
-
-![github-blog-3.png](github-blog-3.png)
-
-## 2. Repository 가져오기
-
-이제 실제로 수정하고 배포할 수도록 내 컴퓨터(local)에 Repsitory를 가져와볼 건데요! 먼저 Repository에서 아래와 같이 초록색 Code 버튼을 클릭하면 링크가 나오게 되는데, 이 링크를 복사합니다.
-
-![github-blog-4.png](github-blog-4.png)
-
-그리고 아래 명령어를 수행하여 블로그를 다운로드합니다.
-
-```bash
-cd [Repository를 저장할 폴더]
-git clone [복사한 주소]
-```
-
-## 3. Blog 설치하기
-
-이제 블로그를 동작시킬 수 있도록 패키지들을 다운로드 해야하는데, 다음 명령어를 실행하시면 받을 수 있습니다.
-
-```bash
-cd [Repository 주소]
-npm install
-```
-
-## 4. Blog 배포 준비하기
-
-그리고 이제 Gatsby 테마를 GitHub 페이지에 올리기 위해 gh-pages라는 패키지를 설치해야 합니다. 설치는 다음 명령어를 실행하시면 됩니다.
-
-```bash
-npm install gh-pages --save-dev
-```
-
-그리고 나서 package.json에 다음을 추가합니다.
-
-```json
-{
-  "scripts": {
-    "deploy": "gatsby build && gh-pages -d public" // 추가
-  }
+  a = b   // a = 456
+  b = c   // b = 123
 }
 ```
 
-## 5. Blog 배포하기
+뭐 파이썬처럼 생각해보면 맞지 않을까? 라는 의문이 들 수 있는게 당연하다 (일단 나부터 개추;;)
 
-드디어 배포 준비는 다 끝났습니다. 이제 다음 명령을 실행하시면 github page에 배포하실 수 있습니다.
+실제로는 이 코드는 에러블록을 띄우는데, <strong>a</strong>와 <strong>b</strong>는 파라미터이기 때문에, 전역변수 scope에 있던 변수들이 복사되어 전달된다 (직접 쓰인다 정도로 이해하면 될 듯) 따라서, 원본이 전달되기 때문에 전역변수의 값이 변경되어서는 안되는 변경 불가가 원칙이다.
 
-```bash
-npm run deploy
+```swift
+var num1 = 123
+var num2 = 456
+
+func swap(a: inout Int, b: inout Int){  //직접이 아닌, 주소값이 전달됨(참조)
+  var temp = a
+
+  a = b
+  b = temp
+}
+
+swap(a: &num1, b:&num2) //함수를 실행하고자 할 때는 & 기호를 붙여서 생성해야함
+```
+이 예시를 보면 파라미터 앞에 inout 키워드를 쓰게되면, 이는 직접 전달 방식보단, 주소값 참조의 의미가 된다. 
+
+내부적으로는, copy-in copy-out 매커니즘인데, 실제 원본이 전달된다고 생각하면 됨. 값을 복사해서 바디 내부로 전달하고, 함수가 종료될 때, 아규먼트로 전달한 변수에 복사됨 (함수 바디 내부에서 외부로 복사되어 전달)   
+<br/>
+
+**inout파라미터 사용시 주의해야할 점**
+- 상수 let이나, 리터럴을 전달하는 것은 불가능
+- 파라미터의 기본값 선언을 허용하지 않음
+- 가변 파라미터나 여러개의 파라미터를 선언하여 사용하는 것도 불가능
+<br/>
+<br/>
+
+## 2. guard문
+
+If 문을 사용할 때 불편한 점? 바로 조건이 너무 많게 될 경우 코드 들여쓰기가 계속 될 수 있다는 것이다.<br/> → 가독성 매우 떨어지게 됨.
+
+guard문을 사용하여 불만족하는 조건을 사전에 걸러낸다.
+- else문을 먼저 배치, 먼저 조건을 판별하여 early-exit 가능하게 함.
+- 조건을 만족하는 경우 코드가 다음 줄로 넘어가서 계속 실행됨.
+- 가드문에서 선언된 변수는 아래문장에서 사용가능하다 (func 자체로는 같은 scope임) => 옵셔널 바인딩에서 더 알아보자.
+
+```swift
+  if true {   //서울에 거주하는 경우...
+    if true {   //축구를 좋아하는 경우...
+      if true {   //남자인 경우....
+        if false{    //알파메일일 경우....
+          .... 너무 난잡해짐
+        }
+      }
+    }
+  }
+```
+여러가지의 조건을 만족하는 유저를 구한다는 가정을 해보면, 코드가 상당히 들여써질 수 밖에 없다. else도 마찬가지일꺼고. 가드문은 이런 코드가독성을 굉장히 상승시켜줄만한 문법이라고 볼 수 있다.
+
+```swift
+func checkNumebrOf(password: String) -> Bool{
+  guard password.count >=6 else {return false}
+
+  guard 조건 else {return false}
+
+  guard 조건 else {return false}
+  ...
+  return true
+}
+```
+여전히 뭔 개소리인지 모르겠다면 밑에 예제를 보고 이해해보자
+
+![github-blog-5.png](dog.png)
+그냥 갑자기 한국축구가 생각나서 붙여봤다.
+
+```swift
+//if문
+func usingIf() {
+  var id: String? = nil
+  if let str = id {
+    if str.count > = 6 {
+      print(str)
+    }
+  }
+}
+// 조건 2개인데 벌써 토나옴
 ```
 
-조금 기다리신 후에 다음과 같이 `Published`라는 메시지를 받으셨다면 배포는 잘 끝났습니다!
+```swift
+//guard문
+func usingGuard(){
+  var id: String? = nil
 
-> 🙋‍♂️ 제 블로그 템플릿을 사용하시는 분들을 `node 버전이 14 이상`이어야 합니다.
-> node -v를 통해 node 버전을 확인하신 후 낮은 버전이라면 업그레이드를 진행해주세요!
-
-> 💡 혹시 그 외에 다른 에러가 발생하신다면 아래에 댓글로 에러 내용을 알려주세요!
-
-![github-blog-5.png](github-blog-5.png)
-
-## 6. Repository Source Branch 변경하기
-
-마지막으로 GitHub 페이지가 작동하려면 GitHub의 Repository 설정에서 배포 할 Branch를 선택해야 합니다. 이를 위해서 Repository에 있는 Settings를 클릭하고 죄측 메뉴에서 Pages를 클릭하여 Github Pages 설정 페이지로 이동합니다.
-
-![github-blog-6.png](github-blog-6.png)
-
-여기서 Source에 있는 Branch를 master(main)에서 gh-pages로 변경한 후에 저장합니다.
-
-![github-blog-7.png](github-blog-7.png)
-
-## 7. 배포된 페이지 확인하기
-
-이제 실제로 잘 배포가 되었는지 확인해봅시다. 여태까지 문제가 없으셨다면 [GitHubID].github.io에 접근했을 때 블로그가 잘 보이는 것을 확인하실 수 있으실 겁니다.
-
-![github-blog-8.png](github-blog-8.png)
-
-## 8. 수정하고 배포하기
-
-블로그를 수정하시는 방법은 각 블로그 테마마다 다를텐데요. 그에 맞춰서 변동사항을 commit하신 후에 아래 명령어를 실행하시면 변동사항이 블로그에 배포됩니다!
-
-```bash
-npm run deploy
+  guard let str = id else {return}
+  guard str.count >= 6 else {return}
+}
+//조건 2개인데 이 정도차이라면, 실무에선 어떻겠...
 ```
+중요한건! 무조건 Return키워드를 통해서 무조건 scope를 탈출해야한다!
+<br/>
+<br/>
+
+## 3. 옵셔널 바인딩
+
+옵셔널 타입에 대해서는....(그냥 알아들었으면 끄덕여)
+
+음..그래서 옵셔널 타입(임시타입)을 추출하는 방법에는 4가지가 있다.
+
 
 <br/>
 
-## ⭐️ 이 블로그 테마를 이용하고 싶으시다면!
 
-마지막으로 제 블로그 테마를 활용하고 싶으시다면 아래 링크를 참고해주세요!
-[https://www.zoomkoding.com/gatsby-starter-zoomkoding-introduction](https://www.zoomkoding.com/gatsby-starter-zoomkoding-introduction)
-
-궁금하신 점이 있으시다면 [이슈](https://github.com/zoomKoding/zoomkoding-gatsby-blog/issues/new)로 남겨주시면 최대한 빠르게 답변 드리도록 하겠습니다!🙋‍♂️
-
-> 🤔 혹시 특정 기능이 없어서 테마 사용을 망설이시거나 제안하고 싶으신 기능이 있으시다면,  
-> 👉 [여기](https://github.com/zoomKoding/zoomkoding-gatsby-blog/issues/40)에 댓글 남겨주세요! 적극적으로 반영하겠습니다 :)
-
-<br/>
-
-**위 과정을 따라하시면서 궁금하신 점이 있다면 아래 `댓글`로 남겨주세요!👇**
+**궁금하신 점이 있다면 아래 `깃허브 로그인` 후 `댓글`로 남겨주세요!👇**
 
 ```toc
 

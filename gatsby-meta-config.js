@@ -181,7 +181,7 @@ module.exports = {
         title: '함께 사용하는 내 물품 대여서비스, 빌리지',
         description:
           'Village는 지역 및 위치서비스 기반 주변에서 원하는 제품들을 보다 합리적으로 간편하게 대여할 수 있도록 도와주는 서비스입니다. 언제든지 부담없이 잠깐 쓸 제품이지만 비싼 가격 주고 사기는 힘들때, 살 계획은 없지만 체험해보고 싶은 제품이 있을때, 집 근처 또는 내가 원하는 지역에서 원하는 기간동안 대여서비스를 이용할 수 있습니다.',
-        techStack: ['REACT', 'STOMP', 'axios', 'https', 'AWS Cloudfront'],
+        techStack: ['REACT', 'https'],
         thumbnailUrl: 'blog-1.png',
         links: {
           post: '',
