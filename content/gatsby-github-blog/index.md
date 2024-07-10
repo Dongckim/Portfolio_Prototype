@@ -3,11 +3,11 @@ emoji: 🍎
 title: inout 입출력 파라미터, gaurd문, 옵셔널 바인딩
 date: '2024-07-10 00:17:00'
 author: Alex
-tags: 블로그 github-pages gatsby
+tags: inout-guard-optional
 categories: iOS TIL 
 ---
 
-기존 파이썬이나 자바스크립트 문법을 알고 있기 때문에, 비슷한 방식의 문법구조와 관련된 건 스킵하기로 했다. 다만 Swift에서 꼭 알아야만 하는 문법과 이 언어의 특징과 같은 문법들은 꼼꼼하게 되짚어보자.</br><i>(사실 이게 더 어려움;;)<i>
+기존 파이썬이나 자바스크립트 문법을 알고 있기 때문에, 비슷한 방식의 문법구조와 관련된 건 스킵하기로 했다. 다만 Swift에서 꼭 알아야만 하는 문법과 이 언어의 특징과 같은 문법들은 꼼꼼하게 되짚어보자.</br> *(사실 이게 더 어려움;;)*
 
 ## 1. inout 입출력 파라미터
 
@@ -90,7 +90,7 @@ func checkNumebrOf(password: String) -> Bool{
 여전히 뭔 개소리인지 모르겠다면 밑에 예제를 보고 이해해보자
 
 ![github-blog-5.png](dog.png)
-그냥 갑자기 한국축구가 생각나서 붙여봤다.
+*그냥 갑자기 한국축구가 생각나서 붙여봤다.*
 
 ```swift
 //if문
@@ -125,6 +125,69 @@ func usingGuard(){
 
 음..그래서 옵셔널 타입(임시타입)을 추출하는 방법에는 4가지가 있다.
 
+1. **강제추출** : nil이 아닌 값이 있다는 것을 확신해서 강제로 값을 추출하는 방법
+
+```swift
+num!
+```
+2. **nil이 아닌지 확인 후, 강제추출** : If문을 통해 nil이 아님을 먼저 확인 후, 강제로 추출한다. nil이면 상수에 안담김. nil이 아니면, 상수에 담김 
+```swift
+if num != nil {
+  print(num!)
+}
+```
+
+3. **옵셔널 바인딩** : 바인딩(상수나 변수에 대입)이 되는 경우만 특정 작업을 하겠다는 의미. 바인딩이 된다면, 특정 작업을 하겠다는 뜻.
+
+```swift
+//if let
+if let name = optionalName{ //name이라는 상수에 바인딩이 되면~
+  print(name)
+}
+```
+
+```swift
+//guard let
+func doSomething(name: String?){
+    guard let n = name else {return}
+    print(n)
+}
+// 누가봐도 if문 보다 편함. 같은 Scope내에서 가드문 변수는 사용가능하기 때문
+```
+
+> 만약 옵셔널 값이 nil값이라면 어떻게 반응할까?
+> <br/>이때는 메모리에 담기질 않기 때문에 그냥 실행되질 않음. guard문의 경우 exit.
+
+4. **Nil-Coalescing** : 옵셔널 표현식 뒤에 기본값을 제시하여 옵셔널의 가능성을 없앰.
+```swift
+optionalName ?? "홍길동"    //앞의 옵셔널표현식이 nil이라면, 기본값을 제시한다.
+// = optionalName !=nil ? optionalName!: "홍길동"
+
+
+let str : String? = "안녕하세요" //optional타입
+var hellp = "인사하겠습니다" + (str ?? "say hi")
+
+// 인사하겠습니다 안녕하세요
+// 인사하겠습니다 say hi
+```
+
+옵셔널 타입에 대하여, 기본 값을 제시할 수 있을 때 사용 <br/> 직접 값을 벗겨서 사용하는 것은 아니고, 디폴트 값 제시를 통해 옵셔널 가능성을 없애는 방법이다.
+
+<br/>
+
+**옵셔널 타입의 파라미터 사용**
+<br/>일반적으로는 String? = nil 이런식으로 사용하여 함수를 유연하게 사용하게 함. 
+
+```swift
+func doSomething(with label: String, name: String? = nil){  
+    print("\(label): \(name)")
+}
+
+doSomething(with: "레이블", name: "스티브잡스")
+doSomething(with: "레이블", name: nil) 
+//이런식으로 계속 빈 레이블에 Nil을 넣어줘야하는 번거로움을 덜어낼 수 있음
+
+```
 
 <br/>
 
@@ -132,5 +195,5 @@ func usingGuard(){
 **궁금하신 점이 있다면 아래 `깃허브 로그인` 후 `댓글`로 남겨주세요!👇**
 
 ```toc
-
+iOS
 ```
