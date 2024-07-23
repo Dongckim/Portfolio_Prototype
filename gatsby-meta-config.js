@@ -110,6 +110,17 @@ module.exports = {
         },
       },
       {
+        date: '2024.07 ~ 2024.09',
+        activity: '팀 스파르타 99클럽 코딩테스트 Python멘토 (아웃소싱 계약직)',
+        links: {
+          github: '',
+          post: '',
+          googlePlay: '',
+          appStore: '',
+          demo: '',
+        },
+      },
+      {
         date: '2024.04 ~ current',
         activity: '2024 AI교육도시 학생 학술연구 대학생 멘토 인천진산과학고등학교 담당',
         links: {
@@ -152,7 +163,18 @@ module.exports = {
       //     demo: 'https://www.zoomkoding.com',
       //   },
       // },
-      
+      {
+        title: 'English & Coding Camp, Undergradutate Mentor',
+        description:
+          'Scratch 코딩 블록을 사용하여 상호작용적인 방식으로 디자인해야 하며 귀납적 추론을 반영하도록 설계된 일련의 코딩 활동을 통해 학생들이 영어로 컴퓨터적 사고를 배울 수 있는 기회를 제공. 총 20시간 참여.',
+        techStack: ['Mentoring', 'Leadership', 'English-Proficiency'],
+        thumbnailUrl: '',
+        links: {
+          post: '',
+          github: '',
+          demo: '',
+        },
+      },
       {
         title: 'ACE (AWOONG Celeb) 서류전형 검토 솔루션',
         description:
