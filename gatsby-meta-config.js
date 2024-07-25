@@ -55,7 +55,7 @@ module.exports = {
       // ===== 🚫 Don't erase this sample (여기 지우지 마세요!) =====
       {
         date: '2019.03 ~ 2024.06',
-        activity: 'Ghent University Global Campus, 분자생명공학과',
+        activity: 'Ghent University, 분자생명공학과',
         // links: {
         //   post: '/gatsby-starter-zoomkoding-introduction',
         //   github: 'https://github.com/zoomkoding/zoomkoding-gatsby-blog',
