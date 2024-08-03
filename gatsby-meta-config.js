@@ -122,7 +122,7 @@ module.exports = {
       },
       {
         date: '2024.04 ~ current',
-        activity: '2024 AI교육도시 학생 학술연구 대학생 멘토 인천진산과학고등학교 담당',
+        activity: '2024 AI교육도시 학생 학술연구 인천진산과학고등학교 담당멘토',
         links: {
           github: '',
           post: '',
@@ -131,6 +131,17 @@ module.exports = {
           demo: '',
         },
       },
+      {
+        date: '2024.06 ~ 2024.07',
+        activity: '2024 Google 새싹 해커톤 서울시 대회 장려상 수상',
+        links: {
+          github: '',
+          post: '',
+          googlePlay: '',
+          appStore: '',
+          demo: '',
+        },
+      }
     ],
 
     projects: [
