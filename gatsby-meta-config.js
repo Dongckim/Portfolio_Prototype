@@ -133,7 +133,7 @@ module.exports = {
       },
       {
         date: '2024.06 ~ 2024.07',
-        activity: '2024 Google 새싹 해커톤 서울시 대회 장려상 수상',
+        activity: '2024 Google 새싹 해커톤 서울시 대회 Top10 장려상 수상',
         links: {
           github: '',
           post: '',
