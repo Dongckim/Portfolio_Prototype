@@ -205,7 +205,7 @@ module.exports = {
         techStack: ['Apple', 'Networking', 'iOS'],
         thumbnailUrl: 'blog-5.png',
         links: {
-          post: 'https://brunch.co.kr/@kakaobankplus/76',
+          post: 'https://www.youtube.com/watch?v=I8Qhd0vCUIc',
           github: '',
           demo: 'https://kwdc2023.github.io/',
         },
