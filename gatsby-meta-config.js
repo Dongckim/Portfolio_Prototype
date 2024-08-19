@@ -82,7 +82,7 @@ module.exports = {
       },
       {
         date: '2023.06 ~ 2023.08',
-        activity: '서울대학교 OUTTA AI 인공지능 딥러닝 부트캠프 2관왕 수상 (참가자 우수상, 팀 우수상)',
+        activity: '서울대학교 OUTTA AI 인공지능 딥러닝캠프 2관왕 수상 (참가자 우수상, 팀 우수상)',
         // links: {
         //   post: '/gatsby-starter-zoomkoding-introduction',
         //   github: 'https://github.com/zoomkoding/zoomkoding-gatsby-blog',
