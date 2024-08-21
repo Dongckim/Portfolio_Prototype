@@ -121,8 +121,8 @@ module.exports = {
         },
       },
       {
-        date: '2024.04 ~ current',
-        activity: '2024 AI교육도시 학생 학술연구 인천진산과학고등학교 담당멘토',
+        date: '2024.08 ~ current',
+        activity: 'The State University of New York, Stony Brook University 기술경영학과 컴퓨터과학 전공',
         links: {
           github: '',
           post: '',
@@ -132,8 +132,8 @@ module.exports = {
         },
       },
       {
-        date: '2024.08 ~ current',
-        activity: 'The State University of New York, Stony Brook University 기술경영학과 컴퓨터과학 전공',
+        date: '2024.04 ~ current',
+        activity: '2024 AI교육도시 학생 학술연구 인천진산과학고등학교 담당멘토',
         links: {
           github: '',
           post: '',
