@@ -121,6 +121,17 @@ module.exports = {
         },
       },
       {
+        date: '2024.09 ~ 2025.08',
+        activity: '교내 사이드 프로젝트 동아리 LAMBDA 부회장',
+        links: {
+          github: '',
+          post: 'https://mellene.github.io/lambda/works.html',
+          googlePlay: '',
+          appStore: '',
+          demo: '',
+        },
+      },
+      {
         date: '2024.08 ~ current',
         activity: 'The State University of New York, Stony Brook University 기술경영학과 컴퓨터과학 전공',
         links: {
@@ -174,6 +185,18 @@ module.exports = {
       //     demo: 'https://www.zoomkoding.com',
       //   },
       // },
+      {
+        title: 'Lambda-thon',
+        description:
+          '사이드 프로젝트 동아리 임원진으로, 부원들과 함께 무박2일간 기업가 정신 비즈니스 역량을 다질 수 있는 아이디어톤을 기획 및 운영 중. 10월 중순 개최 예정',
+        techStack: ['Leadership', 'Communication', 'Organizational Skill'],
+        thumbnailUrl: '',
+        links: {
+          post: '',
+          github: '',
+          demo: '',
+        },
+      },
       {
         title: 'English & Coding Camp, Undergradutate Mentor',
         description:
