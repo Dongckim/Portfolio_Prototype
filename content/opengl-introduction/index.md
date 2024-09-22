@@ -88,6 +88,26 @@ OpenGL ES 기반에는 또 GPU라는 하드웨어가 있다.
 게임엔진이나 그래픽스 애플리케이션이 OpenGL ES를 호출을 하게 되면, 이는 GPU를 가동하게 된다.
 - 따라서 **그래픽스 API는 GPU에 대한 소프트웨어 인터페이스**라고 이해하면 된다.
 
+## VR
+VR headset is a head-mounted Display (HMD) that shows stereo images
+- Virtual Reality (VR) = tracking + rendering
+- VR + motion simulator
+![](VRmotionSimulator.png)
+*IEEE VR 2017, 2019; ACM CHI 2018*
+
+## AR
+A spectrum of mixed reality or extended reality (XR)
+- Microsoft HoloLens 1 and 2
+- **AR = Tracking + 3D Reconstruction + Registration + Rendering**
+
+![](IndustrialAR.png)
+*Industrial AR Application*
+
+### Next-generation AR 
+Tracking + Dynamic 3D Reconstruction + Registration + Rendering + Physics Simulation
+
+
+
 
 
 ```toc
