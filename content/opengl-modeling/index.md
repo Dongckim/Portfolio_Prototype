@@ -86,6 +86,50 @@ polygon mesh에서의 정점의 갯수를 우리는 해상도(resolution)라고 
 
 - 시작 vertex는 딱히 중요하지 않다. 어떤 것을 설정하든, 3개의 vertex를 counter-clock wise 방향으로 나열하기만 한다면, 모두 유효할 것이다.
  
+<br/>
+
+
+### Vertex Normals
+
+정점 법선 벡터라는게 사실 말이 안되긴 한다.
+
+- 샘플링 된 폴리곤 메쉬 구 말고 원래의 부드러운 구라고 생각해보면, Tangent Plane을 생각해볼 수 있다. 해당 Tangent Plane과 구가 만나는 유일한 한 점을 생각해보면, Tangent Plane의 법선 벡터가 결국 Vertex Normal이라고 정의할 수 있겠다.
+
+하지만, Sampling된 Polygon mesh 구에서는 어떻게 구해야 할까? (Smooth하지 않음.)
+![](vertexnormal.png)
+
+- 해당 정점을 공유하는 모든 샘플링된 triangle들의 Surface Normal을 모두 구해서 평균을 내는 방식을 사용한다고 한다. (정규화과정은 필수)
+
+
+## .obj 파일
+
+모델링 된 파일을 유니티와 같은 게임엔진에서 import하기 위해서는 .obj파일을 알아야 한다.
+
+![](obj.png)
+
+1.  v 테이블을 보면, 앞에서 x,y,z 좌표를 나타낸다. (26개)
+
+2.  vn 테이블을 보면 앞에서부터 벡터값을 x,y,z로 나타낸다. (26개)
+
+> vertex normal과 vertex의 갯수가 같다?
+- "구" 라는 특별한 케이스이기 때문
+
+- 평면을 생각해보면 여러지점에서 **같은 법선벡터가 생성되어 중복**되기 때문에, 갯수 자체는 더 적다. 
+
+3. f (face) 테이블을 보면, `(vertex position // vertex normal position)` 의 형식으로 요소가 이루어져있다.
+
+
+mesh는 해당 .obj 파일을 export해서 유니티와 같은 게임엔진이 import받았을 때, vertex array와 index array를 구성하게 된다.
+
+![](unityimport.png)
+
+- vertex array에서는 중복된 position값을 가져오지 않아, 26개의 cell을 구성하게 된다.
+
+- index array는 각각의 모든 삼각형의 구성요소를 표현하기 때문에 144 (48 * 3)개의 cell을 가지게 된다.
+
+
+<br/>
+
 
 ```toc
 ```
