@@ -34,10 +34,13 @@ function PageHeader({ siteTitle }) {
             </div>
             <div className="trailing-section">
               <Link className="link" to="/about">
-                about
+                About
+              </Link>
+              <Link className="link" href = "https://drive.google.com/file/d/1pNl02aDdGH0MtqRh_VRa50dHKnxujtXC/view?usp=sharing">
+                CV
               </Link>
               <Link className="link" to="/posts">
-                posts
+                Posts
               </Link>
               <PostSearch
                 posts={data.allMarkdownRemark.edges.map(({ node }) => new Post(node, true))}
