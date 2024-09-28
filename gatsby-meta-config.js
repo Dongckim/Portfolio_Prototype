@@ -124,8 +124,8 @@ module.exports = {
         date: '2024.09 ~ 2025.08',
         activity: '교내 사이드 프로젝트 동아리 LAMBDA 부회장',
         links: {
-          github: '',
-          post: 'https://mellene.github.io/lambda/works.html',
+          github: 'https://mellene.github.io/lambda/works.html',
+          post: '',
           googlePlay: '',
           appStore: '',
           demo: '',
@@ -189,7 +189,7 @@ module.exports = {
         title: 'Lambda-thon',
         description:
           '사이드 프로젝트 동아리 임원진으로, 부원들과 함께 무박2일간 기업가 정신 비즈니스 역량을 다질 수 있는 아이디어톤을 기획 및 운영 중. 10월 중순 개최 예정',
-        techStack: ['Leadership', 'Communication', 'Organizational Skill'],
+        techStack: ['Leadership', 'Communication'],
         thumbnailUrl: '',
         links: {
           post: '',
@@ -201,7 +201,7 @@ module.exports = {
         title: 'English & Coding Camp, Undergradutate Mentor',
         description:
           'Scratch 코딩 블록을 사용하여 상호작용적인 방식으로 디자인해야 하며 귀납적 추론을 반영하도록 설계된 일련의 코딩 활동을 통해 학생들이 영어로 컴퓨터적 사고를 배울 수 있는 기회를 제공. 총 20시간 참여.',
-        techStack: ['Mentoring', 'Leadership', 'English-Proficiency'],
+        techStack: ['Mentoring', 'English-Proficiency'],
         thumbnailUrl: '',
         links: {
           post: '',
@@ -216,9 +216,9 @@ module.exports = {
         techStack: ['DetectGPT', '#project about face', '창업'],
         thumbnailUrl: 'ACE-document.png',
         links: {
-          post: '',
+          post: 'https://docs.google.com/document/d/1ZbwFQUe7OzkLkLlP38_OCTNLl_N_s-sUfCGgS_TD1wU/edit?usp=sharing',
           github: '',
-          demo: 'https://docs.google.com/document/d/1ZbwFQUe7OzkLkLlP38_OCTNLl_N_s-sUfCGgS_TD1wU/edit?usp=sharing',
+          demo: '',
         },
       },
       {
@@ -228,9 +228,9 @@ module.exports = {
         techStack: ['Apple', 'Networking', 'iOS'],
         thumbnailUrl: 'blog-5.png',
         links: {
-          post: 'https://www.youtube.com/watch?v=I8Qhd0vCUIc',
-          github: '',
-          demo: 'https://kwdc2023.github.io/',
+          post: '',
+          github: 'https://kwdc2023.github.io/',
+          demo: 'https://www.youtube.com/watch?v=I8Qhd0vCUIc',
         },
       },
       {
@@ -242,7 +242,7 @@ module.exports = {
         links: {
           post: '',
           github: 'https://github.com/Dongckim/Village_FE',
-          demo: 'https://village99.store/',
+          demo: 'https://www.youtube.com/watch?v=P52dD59hvxI',
         },
       },
     ],
