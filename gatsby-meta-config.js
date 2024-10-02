@@ -202,7 +202,7 @@ module.exports = {
         description:
           'Scratch 코딩 블록을 사용하여 상호작용적인 방식으로 디자인해야 하며 귀납적 추론을 반영하도록 설계된 일련의 코딩 활동을 통해 학생들이 영어로 컴퓨터적 사고를 배울 수 있는 기회를 제공. 총 20시간 참여.',
         techStack: ['Mentoring', 'English-Proficiency'],
-        thumbnailUrl: '',
+        thumbnailUrl: 'blog-6.png',
         links: {
           post: '',
           github: '',
