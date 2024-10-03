@@ -121,10 +121,10 @@ module.exports = {
         },
       },
       {
-        date: '2024.09 ~ 2025.08',
-        activity: '교내 사이드 프로젝트 동아리 LAMBDA 부회장',
+        date: '2024.08 ~ current',
+        activity: 'The State University of New York, Stony Brook University 기술경영학과 컴퓨터과학 전공',
         links: {
-          github: 'https://mellene.github.io/lambda/works.html',
+          github: '',
           post: '',
           googlePlay: '',
           appStore: '',
@@ -132,10 +132,10 @@ module.exports = {
         },
       },
       {
-        date: '2024.08 ~ current',
-        activity: 'The State University of New York, Stony Brook University 기술경영학과 컴퓨터과학 전공',
+        date: '2024.09 ~ current',
+        activity: '교내 사이드 프로젝트 동아리 LAMBDA 부회장',
         links: {
-          github: '',
+          github: 'https://mellene.github.io/lambda/works.html',
           post: '',
           googlePlay: '',
           appStore: '',
@@ -238,7 +238,7 @@ module.exports = {
         description:
           'Village는 지역 및 위치서비스 기반 주변에서 원하는 제품들을 보다 합리적으로 간편하게 대여할 수 있도록 도와주는 서비스입니다. 언제든지 부담없이 잠깐 쓸 제품이지만 비싼 가격 주고 사기는 힘들때, 살 계획은 없지만 체험해보고 싶은 제품이 있을때, 집 근처 또는 내가 원하는 지역에서 원하는 기간동안 대여서비스를 이용할 수 있습니다.',
         techStack: ['REACT', 'https'],
-        thumbnailUrl: 'blog-1.png',
+        thumbnailUrl: 'blog-11.png',
         links: {
           post: '',
           github: 'https://github.com/Dongckim/Village_FE',
