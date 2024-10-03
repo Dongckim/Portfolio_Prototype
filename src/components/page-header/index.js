@@ -33,7 +33,7 @@ function PageHeader({ siteTitle }) {
               </Link>
             </div>
             <div className="trailing-section">
-              <Link className="link" href = "https://drive.google.com/file/d/1wqNI2I9xiEj1tW-4z3jIfVb3yRe1q-fA/view?usp=sharing">
+              <Link className="link" href = "https://drive.google.com/file/d/1-8Tn3KQBoDppOZ66NgZCiD8C572Da_mA/view?usp=sharing">
                 CV
               </Link>
               <Link className="link" to="/about">
