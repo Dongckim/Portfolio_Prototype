@@ -3,7 +3,7 @@ module.exports = {
   description: `알렉스의 끄적 끄적 끄적`,
   language: `ko`, // `ko`, `en` => currently support versions for Korean and English
   siteUrl: `https://dongckim.github.io/`,
-  ogImage: `/og-image.jpg`, // Path to your in the 'static' folder
+  ogImage: `/og-image.png`, // Path to your in the 'static' folder
   comments: {
     utterances: {
       repo: `dongckim/dongckim.github.io`, // `zoomkoding/zoomkoding-gatsby-blog`,
@@ -121,6 +121,17 @@ module.exports = {
         },
       },
       {
+        date: '2024.04 ~ 2024.09.',
+        activity: '2024 AI교육도시 학생 학술연구 인천진산과학고등학교 담당멘토',
+        links: {
+          github: '',
+          post: '',
+          googlePlay: '',
+          appStore: '',
+          demo: '',
+        },
+      },
+      {
         date: '2024.08 ~ current',
         activity: 'The State University of New York, Stony Brook University 기술경영학과 컴퓨터과학 전공',
         links: {
@@ -136,17 +147,6 @@ module.exports = {
         activity: '교내 사이드 프로젝트 동아리 LAMBDA 부회장',
         links: {
           github: 'https://mellene.github.io/lambda/works.html',
-          post: '',
-          googlePlay: '',
-          appStore: '',
-          demo: '',
-        },
-      },
-      {
-        date: '2024.04 ~ current',
-        activity: '2024 AI교육도시 학생 학술연구 인천진산과학고등학교 담당멘토',
-        links: {
-          github: '',
           post: '',
           googlePlay: '',
           appStore: '',
