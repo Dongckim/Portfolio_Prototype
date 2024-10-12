@@ -2,7 +2,7 @@ module.exports = {
   title: `dong-chan.com`,
   description: `알렉스의 끄적 끄적 끄적`,
   language: `ko`, // `ko`, `en` => currently support versions for Korean and English
-  siteUrl: `https://dongckim.github.io/`,
+  siteUrl: `https://dong-chan.com/`,
   ogImage: `/og-image.png`, // Path to your in the 'static' folder
   comments: {
     utterances: {
