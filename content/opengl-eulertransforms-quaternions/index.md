@@ -1,7 +1,7 @@
 ---
 emoji: 🥽
 title: OpenGL ES 3차원 컴퓨터그래픽스 오일러변환 및 쿼터니언
-date: '2024-09-21 15:34:00'
+date: '2024-10-12 19:43:00'
 author: ALEX
 tags: Research OpenGL
 categories: OpenGL

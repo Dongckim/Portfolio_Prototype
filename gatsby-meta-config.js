@@ -3,7 +3,7 @@ module.exports = {
   description: `알렉스의 끄적 끄적 끄적`,
   language: `ko`, // `ko`, `en` => currently support versions for Korean and English
   siteUrl: `https://dong-chan.com/`,
-  ogImage: `/og-image.png`, // Path to your in the 'static' folder
+  ogImage: `/zuckerberg.jpeg`, // Path to your in the 'static' folder
   comments: {
     utterances: {
       repo: `dongckim/dongckim.github.io`, // `zoomkoding/zoomkoding-gatsby-blog`,
