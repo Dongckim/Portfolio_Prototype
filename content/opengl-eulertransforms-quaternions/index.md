@@ -79,7 +79,12 @@ categories: OpenGL
 ### 3D Rotation through Quaternions
 
 3D에서는 축이 필요한데, 이 축을 기준으로 θ만큼 회전한다고 가정해보자.
+
+<br/>
+
 ![](3dQuaternion.png)
+
+<br/>
 
 - 이는 꼭 x,y,z축에서만 회전이 가능하게 하는 것이 아닌, 임의의 u축의 회전도 지원하게 된다.
 
