@@ -111,13 +111,13 @@ module.exports = {
       },
       {
         date: '2024.07 ~ 2024.09',
-        activity: '팀 스파르타 99클럽 코딩테스트 Python멘토 (아웃소싱 계약직)',
+        activity: '팀 스파르타 99클럽 3기 코딩테스트 Python멘토 (아웃소싱 계약직)',
         links: {
           github: '',
           post: '',
           googlePlay: '',
           appStore: '',
-          demo: '',
+          demo: 'https://99club.oopy.io/',
         },
       },
       {
@@ -153,6 +153,17 @@ module.exports = {
           demo: '',
         },
       },
+      {
+        date: '2024.10 ~ current',
+        activity: '팀 스파르타 99클럽 4기 코딩테스트 Java멘토 (아웃소싱 계약직)',
+        links: {
+          github: '',
+          post: '',
+          googlePlay: '',
+          appStore: '',
+          demo: 'https://99club.oopy.io/',
+        },
+      },
     ],
 
     projects: [
@@ -186,11 +197,11 @@ module.exports = {
       //   },
       // },
       {
-        title: 'Lambda-thon',
+        title: 'Lambda-thon: Take a Risk, Like a Silicon Valley',
         description:
-          '사이드 프로젝트 동아리 임원진으로, 부원들과 함께 무박2일간 기업가 정신 비즈니스 역량을 다질 수 있는 아이디어톤을 기획 및 운영 중. 10월 중순 개최 예정',
+          '사이드 프로젝트 동아리 임원진으로, 부원들과 함께 무박2일간 기업가 정신 비즈니스 역량을 다질 수 있는 아이디어톤 행사를 기획 및 안전하게 운영. ',
         techStack: ['Leadership', 'Communication'],
-        thumbnailUrl: '',
+        thumbnailUrl: 'blog-12.jpeg',
         links: {
           post: '',
           github: '',
@@ -216,7 +227,7 @@ module.exports = {
         techStack: ['DetectGPT', '#project about face', '창업'],
         thumbnailUrl: 'ACE-document.png',
         links: {
-          post: 'https://docs.google.com/document/d/1ZbwFQUe7OzkLkLlP38_OCTNLl_N_s-sUfCGgS_TD1wU/edit?usp=sharing',
+          post: '',
           github: '',
           demo: '',
         },
