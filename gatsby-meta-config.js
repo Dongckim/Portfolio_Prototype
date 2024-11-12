@@ -117,7 +117,7 @@ module.exports = {
           post: '',
           googlePlay: '',
           appStore: '',
-          demo: 'https://99club.oopy.io/',
+          demo: '',
         },
       },
       {
@@ -144,7 +144,7 @@ module.exports = {
       },
       {
         date: '2024.09 ~ current',
-        activity: '교내 사이드 프로젝트 동아리 LAMBDA 부회장',
+        activity: '교내 사이드 프로젝트 동아리 LAMBDA Vice President',
         links: {
           github: 'https://mellene.github.io/lambda/works.html',
           post: '',
@@ -161,7 +161,18 @@ module.exports = {
           post: '',
           googlePlay: '',
           appStore: '',
-          demo: 'https://99club.oopy.io/',
+          demo: '',
+        },
+      },
+      {
+        date: '2024.11.23 ~ 24',
+        activity: `과학기술정보통신부 청소년 SW동행 해커톤 대회 평가위원 및 멘토코치 예정`,
+        links: {
+          github: '',
+          post: '',
+          googlePlay: '',
+          appStore: '',
+          demo: '',
         },
       },
     ],
