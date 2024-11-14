@@ -48,8 +48,33 @@ categories: Algorithm
 ### Call by value? VS Call by reference?
 
 ```java
-public class Main {
-	public static void cut (int[] arr) {    //local parameter!
+
+public class MemoryRep {
+
+    public static void modify (int x) {
+        x = 20;
+        System.out.println(x);
+    }
+
+    public static void modify2 (int[] bb) {
+        // Line M
+        bb[0] = 20;
+    }
+
+    // Swaps the values of x and y inside swap
+    public static void swap (int x, int y) {
+        int temp = x;
+        x = y;
+        y = temp;
+    }
+
+    public static void swap2 (int[] arr, int i, int j) {
+        int temp = arr[i];
+        arr[i] = arr[j];
+        arr[j] = temp;
+    }
+
+    public static void cut (int[] arr) {    //local parameter!
         // Reassigning a value to arr is much like cutting
         // off the original value.
         //        arr = new int[200];
@@ -94,8 +119,9 @@ public class Main {
         // print will run into a run-time error when you pass aa with
         // its null value.  Since null.length would not make sense.
         print(aa);
+
+    }
     
-	}
 }
 
 ```
