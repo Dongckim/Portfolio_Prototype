@@ -47,6 +47,57 @@ categories: Algorithm
 
 ### Call by value? VS Call by reference?
 
+```java
+public static void cut (int[] arr) {    //local parameter!
+        // Reassigning a value to arr is much like cutting
+        // off the original value.
+        //        arr = new int[200];
+        arr = null;
+    }
+
+    public static void print (int[] aa) {
+        for (int i = 0; i < aa.length; i++) {
+            System.out.print(aa[i] + " ");
+        }
+        System.out.println();
+    }
+
+
+    // Talk about memory model here
+
+    public static void main (String[] args) {
+        int a = 2;
+        modify(a);         // Line 1
+        System.out.println("a = " + a);  // Line 2
+
+        int[] aa = {10, 20, 30, 40};
+        print(aa);
+        modify2(aa);        // Line 3
+        print(aa);          // Line 4
+
+        int i = 20;
+        int j = 30;
+        swap(i, j);
+        System.out.println("i = " + i + " j = " + j);
+        
+        swap(aa[2], aa[3]);
+        print(aa);          // Line 5
+
+        swap2(aa, 2, 3);
+        print(aa);          // Line 6
+
+        cut(aa);     // Line 7
+        print(aa);   // Line 8
+
+        aa = null;
+        // print will run into a run-time error when you pass aa with
+        // its null value.  Since null.length would not make sense.
+        print(aa);
+    
+}
+
+```
+
 시간 없으니...나중에...
 
 <br/>
