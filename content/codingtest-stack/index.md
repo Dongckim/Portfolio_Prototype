@@ -48,7 +48,8 @@ categories: Algorithm
 ### Call by value? VS Call by reference?
 
 ```java
-public static void cut (int[] arr) {    //local parameter!
+public class Main {
+	public static void cut (int[] arr) {    //local parameter!
         // Reassigning a value to arr is much like cutting
         // off the original value.
         //        arr = new int[200];
@@ -94,6 +95,7 @@ public static void cut (int[] arr) {    //local parameter!
         // its null value.  Since null.length would not make sense.
         print(aa);
     
+	}
 }
 
 ```
