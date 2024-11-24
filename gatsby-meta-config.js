@@ -212,7 +212,7 @@ module.exports = {
         description:
           '사이드 프로젝트 동아리 임원진으로, 부원들과 함께 무박2일간 기업가 정신 비즈니스 역량을 다질 수 있는 아이디어톤 행사를 기획 및 안전하게 운영. ',
         techStack: ['Leadership', 'Communication'],
-        thumbnailUrl: 'blog-13.jpg',
+        thumbnailUrl: 'blog-12.jpeg',
         links: {
           post: '',
           github: '',
